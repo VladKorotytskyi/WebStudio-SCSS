@@ -1,0 +1,58 @@
+.benefist-title-first{
+    margin-top: 94px;;
+}
+.benefist-title-second{
+    padding-top: 94px;
+}
+.benefist-title-third{
+    padding-top: 94px;
+}
+.benefist-title-fourth{
+    padding-top: 94px;
+}
+.benefist-title-first::before{
+    margin-bottom: 30px;
+    content: '';
+    display: block;
+    width: 270px;
+    height: 120px;
+    background-image:url(../img/Group1.png);
+}
+.benefist-title-second::before{
+    margin-bottom: 30px;
+    content: '';
+    display: block;
+    width: 270px;
+    height: 120px;
+    background-image:url(../img/Group2.png);
+}
+.benefist-title-third::before{
+    margin-bottom: 30px;
+    content: '';
+    display: block;
+    width: 270px;
+    height: 120px;
+    background-image:url(../img/Group3.png);
+}
+.benefist-title-fourth::before{
+    margin-bottom: 30px;
+    content: '';
+    display: block;
+    width: 270px;
+    height: 120px;
+    background-image:url(../img/Group4.png);
+}
+.benefist-text{
+    padding-bottom: 94px;
+    color: var(--text-color);
+}
+.benefist-list{
+display: flex;
+justify-content: space-between;
+}
+.benefist-item{
+    width: 270px;
+}
+.benefist-title{
+    padding-bottom: 10px;
+}
