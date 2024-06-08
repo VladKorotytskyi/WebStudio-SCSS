@@ -1,16 +1,16 @@
-.benefist-title-first{
+.header__benefist-title-first{
     margin-top: 94px;;
 }
-.benefist-title-second{
+.header__benefist-title-second{
     padding-top: 94px;
 }
-.benefist-title-third{
+.header__benefist-title-third{
     padding-top: 94px;
 }
-.benefist-title-fourth{
+.header__benefist-title-fourth{
     padding-top: 94px;
 }
-.benefist-title-first::before{
+.header__benefist-title-first::before{
     margin-bottom: 30px;
     content: '';
     display: block;
@@ -18,7 +18,7 @@
     height: 120px;
     background-image:url(../img/Group1.png);
 }
-.benefist-title-second::before{
+.header__benefist-title-second::before{
     margin-bottom: 30px;
     content: '';
     display: block;
@@ -26,7 +26,7 @@
     height: 120px;
     background-image:url(../img/Group2.png);
 }
-.benefist-title-third::before{
+.header__benefist-title-third::before{
     margin-bottom: 30px;
     content: '';
     display: block;
@@ -34,7 +34,7 @@
     height: 120px;
     background-image:url(../img/Group3.png);
 }
-.benefist-title-fourth::before{
+.header__benefist-title-fourth::before{
     margin-bottom: 30px;
     content: '';
     display: block;
@@ -42,17 +42,14 @@
     height: 120px;
     background-image:url(../img/Group4.png);
 }
-.benefist-text{
+.header__benefist-text{
     padding-bottom: 94px;
     color: var(--text-color);
 }
-.benefist-list{
-display: flex;
-justify-content: space-between;
+.header__benefist-list{
+    display: flex;
+    justify-content: space-between;
 }
-.benefist-item{
+.header__benefist-item{
     width: 270px;
-}
-.benefist-title{
-    padding-bottom: 10px;
 }
