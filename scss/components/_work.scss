@@ -8,8 +8,7 @@
     position: relative;
 }
 .work__list{
-    display: flex;
-    justify-content: space-between;
+    @extend %flex;
 }
 .work__item{
     width: 370px;

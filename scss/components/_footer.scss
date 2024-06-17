@@ -1,19 +1,19 @@
+%logospan{
+    font-family: 'Raleway', sans-serif;
+    font-size: 26px;
+    font-weight: 700;
+    text-decoration: none;
+}
 .footer{
     background-color: $footer-color;
     padding-top: 60px;
 }
 .footer__logo{
-    font-family: 'Raleway', sans-serif;
-    font-size: 26px;
-    font-weight: 700;
-    text-decoration: none;
+    @extend %logospan;
     color: $accent-color;
 }
 .footer__span{
-    font-family: 'Raleway', sans-serif;
-    font-size: 26px;
-    font-weight: 700;
-    text-decoration: none;
+    @extend %logospan;
     color: $item-color;
 }
 .footer__addres-name{

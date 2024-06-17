@@ -1,7 +1,17 @@
+%link{
+    content: '';
+    display: block;
+    background-color: $accent-color;
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    position: absolute;
+    left: 0;
+    bottom: -33px; 
+}
 .header__wrap{
-    display: flex;
+    @extend %flex;
     align-items: center;
-    justify-content: space-between;
 }
 .header__navigation{
     display: flex;
@@ -10,10 +20,7 @@
     padding-bottom: 25px;
 }
 .header__logo{
-    font-family: 'Raleway', sans-serif;
-    font-size: 26px;
-    font-weight: 700;
-    text-decoration: none;
+    @extend %logospan;
     color: $accent-color;
 }
 .header__list{
@@ -35,26 +42,10 @@
     color: $accent-color;
 }
 .header__link.current::after{
-    content: '';
-    display: block;
-    background-color: $accent-color;
-    width: 100%;
-    height: 4px;
-    border-radius: 2px;
-    position: absolute;
-    left: 0;
-    bottom: -33px;
+    @extend %link;
 }
 .header__link:hover:after{
-    content: '';
-    display: block;
-    background-color: $accent-color;
-    width: 100%;
-    height: 4px;
-    border-radius: 2px;
-    position: absolute;
-    left: 0;
-    bottom: -33px;
+    @extend %link;
 }
 .header__link::after{
     content: '';

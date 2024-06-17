@@ -1,3 +1,14 @@
+%flex{
+    display: flex;
+    justify-content: space-between;
+}
+%benefistTitle{
+    margin-bottom: 30px;
+    content: '';
+    display: block;
+    width: 270px;
+    height: 120px;
+}
 .header__benefist-title-first{
     margin-top: 94px;;
 }
@@ -11,44 +22,27 @@
     padding-top: 94px;
 }
 .header__benefist-title-first::before{
-    margin-bottom: 30px;
-    content: '';
-    display: block;
-    width: 270px;
-    height: 120px;
+    @extend %benefistTitle;
     background-image:url(../img/Group1.png);
 }
 .header__benefist-title-second::before{
-    margin-bottom: 30px;
-    content: '';
-    display: block;
-    width: 270px;
-    height: 120px;
+    @extend %benefistTitle;
     background-image:url(../img/Group2.png);
 }
 .header__benefist-title-third::before{
-    margin-bottom: 30px;
-    content: '';
-    display: block;
-    width: 270px;
-    height: 120px;
+    @extend %benefistTitle;
     background-image:url(../img/Group3.png);
 }
 .header__benefist-title-fourth::before{
-    margin-bottom: 30px;
-    content: '';
-    display: block;
-    width: 270px;
-    height: 120px;
+    @extend %benefistTitle;
     background-image:url(../img/Group4.png);
 }
 .header__benefist-text{
     padding-bottom: 94px;
-    color: var(--text-color);
+    color: $text-color;
 }
 .header__benefist-list{
-    display: flex;
-    justify-content: space-between;
+    @extend %flex;
 }
 .header__benefist-item{
     width: 270px;
