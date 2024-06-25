@@ -1,31 +1,46 @@
-.header__post{
-    background-image:url("../img/overlay.png") , url("../img/fon.jpg");
-    text-align: center;
+.header__post {
+  background-image: url("../img/overlay.png"), url("../img/fon.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  text-align: center;
 }
-.header__post-title{
+.header__post-title {
+  font-size: 26px;
+  font-weight: 900;
+  letter-spacing: 2.64px;
+  line-height: 136%;
+  text-transform: uppercase;
+  color: $main-color;
+  padding-top: 200px;
+  padding-bottom: 40px;
+  text-align: center;
+}
+.header__post-button {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 2;
+  color: rgb(255, 255, 255);
+  background-color: $accent-color;
+  cursor: pointer;
+  margin-bottom: 200px;
+  border-radius: 4px;
+  border: none;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+  padding: 10px 32px;
+}
+@media screen and (min-width: 768px) {
+}
+@media screen and (min-width: 1200px) {
+  .header__post-title {
     font-size: 44px;
-    font-weight: 900;
-    letter-spacing: 2.64px;
-    line-height: 136%;
-    text-transform: uppercase;
-    color: $main-color;
-    padding-top: 200px;
-    padding-bottom: 40px;
-    text-align: center;
+  }
 }
-.header__post-button{
-    font-size: 16px;
-    font-weight: 700;
-    line-height: 2;
-    color: rgb(255, 255, 255);
-    background-color: $accent-color;
-    cursor: pointer;
-    margin-bottom: 200PX;
-    border-radius: 4px;
-    border: none;
-    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
-    padding: 10px 32px;
-}
+
+
+
+
+// modal
 .backdrop{
     position: fixed;
     top: 0;

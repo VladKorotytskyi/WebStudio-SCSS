@@ -6,44 +6,103 @@
     margin-bottom: 30px;
     content: '';
     display: block;
-    width: 270px;
+    border-radius: 4px;
     height: 120px;
+    background-repeat: no-repeat;
 }
-.header__benefist-title-first{
-    margin-top: 94px;;
+.benefist{
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
-.header__benefist-title-second{
-    padding-top: 94px;
+.benefist__text{
+    color: $text-color;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 171%;
+    letter-spacing: 0.03em;
 }
-.header__benefist-title-third{
-    padding-top: 94px;
+.benefist__item{
+    width: 290px;
 }
-.header__benefist-title-fourth{
-    padding-top: 94px;
+.benefist__title-first{
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    text-align: center;
+    color: #212121;
+    margin-bottom: 10px;
 }
-.header__benefist-title-first::before{
+.benefist__title-second{
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    text-align: center;
+    color: #212121;
+    margin-bottom: 10px;
+}
+.benefist__title-third{
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    text-align: center;
+    color: #212121;
+    margin-bottom: 10px;
+}
+.benefist__title-fourth{
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    text-align: center;
+    color: #212121;
+    margin-bottom: 10px;
+}
+.benefist__title-first::before{
     @extend %benefistTitle;
     background-image:url(../img/Group1.png);
 }
-.header__benefist-title-second::before{
+.benefist__title-second::before{
     @extend %benefistTitle;
     background-image:url(../img/Group2.png);
 }
-.header__benefist-title-third::before{
+.benefist__title-third::before{
     @extend %benefistTitle;
     background-image:url(../img/Group3.png);
 }
-.header__benefist-title-fourth::before{
+.benefist__title-fourth::before{
     @extend %benefistTitle;
     background-image:url(../img/Group4.png);
 }
-.header__benefist-text{
-    padding-bottom: 94px;
-    color: $text-color;
+
+
+@media screen and (min-width){
+    .benefist__item{
+        width: 450px;
+    }
 }
-.header__benefist-list{
-    @extend %flex;
+@media screen and (min-width: 768px) {  
+    .benefist__title-first{
+        text-align: left;
+    }
+    .benefist__title-second{
+        text-align: left;
+    }
+    .benefist__title-third{
+        text-align: left;    
+    }
+    .benefist__title-fourth{
+        text-align: left;      
+    }
 }
-.header__benefist-item{
-    width: 270px;
+@media screen and (min-width: 768px) {  
+    .benefist{
+        padding-top: 94px;
+        padding-bottom: 94px;
+    }
 }
+
+
+

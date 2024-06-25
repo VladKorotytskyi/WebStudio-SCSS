@@ -29,11 +29,26 @@ img {
 }
 
 .container {
-  width: 1200px;
+  width: 320px;
   margin: 0 auto;
   padding: 0 15px;
 }
 
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
+}
 .header__link:hover:after, .header__link.current::after {
   content: "";
   display: block;
@@ -152,11 +167,14 @@ img {
 
 .header__post {
   background-image: url("../img/overlay.png"), url("../img/fon.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   text-align: center;
 }
 
 .header__post-title {
-  font-size: 44px;
+  font-size: 26px;
   font-weight: 900;
   letter-spacing: 2.64px;
   line-height: 136%;
@@ -174,13 +192,18 @@ img {
   color: rgb(255, 255, 255);
   background-color: #2196F3;
   cursor: pointer;
-  margin-bottom: 200PX;
+  margin-bottom: 200px;
   border-radius: 4px;
   border: none;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
   padding: 10px 32px;
 }
 
+@media screen and (min-width: 1200px) {
+  .header__post-title {
+    font-size: 44px;
+  }
+}
 .backdrop {
   position: fixed;
   top: 0;
@@ -297,60 +320,118 @@ img {
   margin-bottom: 4px;
 }
 
-.client__list, .team__list, .work__list, .header__benefist-list, .header__wrap {
+.client__list, .team__list, .work__list, .header__wrap {
   display: flex;
   justify-content: space-between;
 }
 
-.header__benefist-title-fourth::before, .header__benefist-title-third::before, .header__benefist-title-second::before, .header__benefist-title-first::before {
+.benefist__title-fourth::before, .benefist__title-third::before, .benefist__title-second::before, .benefist__title-first::before {
   margin-bottom: 30px;
   content: "";
   display: block;
-  width: 270px;
+  border-radius: 4px;
   height: 120px;
+  background-repeat: no-repeat;
 }
 
-.header__benefist-title-first {
-  margin-top: 94px;
+.benefist {
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
-.header__benefist-title-second {
-  padding-top: 94px;
+.benefist__text {
+  color: #757575;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 171%;
+  letter-spacing: 0.03em;
 }
 
-.header__benefist-title-third {
-  padding-top: 94px;
+.benefist__item {
+  width: 290px;
 }
 
-.header__benefist-title-fourth {
-  padding-top: 94px;
+.benefist__title-first {
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  text-align: center;
+  color: #212121;
+  margin-bottom: 10px;
 }
 
-.header__benefist-title-first::before {
+.benefist__title-second {
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  text-align: center;
+  color: #212121;
+  margin-bottom: 10px;
+}
+
+.benefist__title-third {
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  text-align: center;
+  color: #212121;
+  margin-bottom: 10px;
+}
+
+.benefist__title-fourth {
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  text-align: center;
+  color: #212121;
+  margin-bottom: 10px;
+}
+
+.benefist__title-first::before {
   background-image: url(../img/Group1.png);
 }
 
-.header__benefist-title-second::before {
+.benefist__title-second::before {
   background-image: url(../img/Group2.png);
 }
 
-.header__benefist-title-third::before {
+.benefist__title-third::before {
   background-image: url(../img/Group3.png);
 }
 
-.header__benefist-title-fourth::before {
+.benefist__title-fourth::before {
   background-image: url(../img/Group4.png);
 }
 
-.header__benefist-text {
-  padding-bottom: 94px;
-  color: #757575;
+@media screen and (min-width) {
+  .benefist__item {
+    width: 450px;
+  }
 }
-
-.header__benefist-item {
-  width: 270px;
+@media screen and (min-width: 768px) {
+  .benefist__title-first {
+    text-align: left;
+  }
+  .benefist__title-second {
+    text-align: left;
+  }
+  .benefist__title-third {
+    text-align: left;
+  }
+  .benefist__title-fourth {
+    text-align: left;
+  }
 }
-
+@media screen and (min-width: 768px) {
+  .benefist {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
 .work__title {
   padding-bottom: 50px;
   text-align: center;
