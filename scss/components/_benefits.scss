@@ -76,13 +76,6 @@
     @extend %benefistTitle;
     background-image:url(../img/Group4.png);
 }
-
-
-@media screen and (min-width){
-    .benefist__item{
-        width: 450px;
-    }
-}
 @media screen and (min-width: 768px) {  
     .benefist__title-first{
         text-align: left;
@@ -96,11 +89,26 @@
     .benefist__title-fourth{
         text-align: left;      
     }
+    .benefist__list{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .benefist__item{
+        width: 354px;
+    }
+    .benefist__title-first::before{
+        max-width: 100%;
+        width: 100%;
+    }
 }
-@media screen and (min-width: 768px) {  
+@media screen and (min-width: 1200px) {  
     .benefist{
         padding-top: 94px;
         padding-bottom: 94px;
+    }
+    .benefist__item{
+        width: 270px;
     }
 }
 
