@@ -79,15 +79,19 @@
 @media screen and (min-width: 768px) {  
     .benefist__title-first{
         text-align: left;
+        width: 100%;
     }
     .benefist__title-second{
         text-align: left;
+        width: 100%;
     }
     .benefist__title-third{
-        text-align: left;    
+        text-align: left;
+        width: 100%;    
     }
     .benefist__title-fourth{
-        text-align: left;      
+        text-align: left;
+        width: 100%;      
     }
     .benefist__list{
         display: flex;
@@ -98,7 +102,6 @@
         width: 354px;
     }
     .benefist__title-first::before{
-        max-width: 100%;
         width: 100%;
     }
 }

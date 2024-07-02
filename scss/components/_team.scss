@@ -1,50 +1,49 @@
-.team__img{
-    margin-bottom: 30px;
-}
 .team{
     background-color: $section-color;
 }
+.team__title{
+    padding-top: 60px;
+}
+.team__img{
+    margin-bottom: 30px;
+}
+
 .team__div{
     background-color: white;
-    
 }
-.team__title{
-    padding-top: 94px;
-}
+
 .team__text{
-    padding-bottom: 124px;
+    padding-bottom: 16px;
 }
-.team__list{
-    @extend %flex;
-}
+
 .team__item{
-    width: 270px;
+    width: 290px;
 }
 .team__title{
     text-align: center;
-    margin-bottom: 50px;
-    font-size: 36px;
+    margin-bottom: 30px;
+    font-size: 28px;
 }
 
 .team__text{
     color: $text-color;
+    font-weight: 400;
+    font-size: 16px;
+    letter-spacing: 0.03em;
     text-align: center;
-    padding-bottom: 1px;
+    padding-top: 10px;
 }
 .team__name{
-    margin-bottom: 10px;
-    text-align: center;
     font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 0.03em;
+    text-align: center;
 }
 .team__div{
-    margin-bottom: 94px;
+    margin-bottom: 30px;
 }
-.team__social:hover{
-    background-color: #2196F3;
-    fill: #FFFFFF;
-    border-radius: 50%;
-    animation-name: changeBgColor;
-    animation-duration: 250ms;
+.team__div{
+    box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12);
 }
 .team__icon{
     width: 22px;
@@ -53,12 +52,20 @@
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+.team__social:hover{
+    background-color: #2196F3;
+    fill: #FFFFFF;
+    border-radius: 50%;
+    animation-name: changeBgColor;
+    animation-duration: 250ms;
+}
+
 .team__links{
     display: flex;
     justify-content: center;
     gap: 10px;
     margin-bottom: 30px;
-    margin-top: 16px;
+    margin-top: 10px;
 }
 .team__social{
     width: 44px;
@@ -69,9 +76,7 @@
     fill: #757575;
     border-radius: 50%;
 }
-.team__div{
-    box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12);
-}
+
 @keyframes changeBgColor{
     0%{
      background-color: white;
@@ -80,3 +85,18 @@
      background-color: #188ce8;
     }
  }
+@media screen and (min-width:768px){
+    .team__item{
+        width: 354px;
+    }
+    .team__list{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+}
+@media screen and (min-width:1200px){
+    .team__item{
+        width: 270px;
+    }
+}
