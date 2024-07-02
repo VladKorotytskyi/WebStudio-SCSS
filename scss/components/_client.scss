@@ -1,23 +1,24 @@
 .client__title{
     font-weight: 700;
-    font-size: 36px;
+    font-size: 28px;
     letter-spacing: 0.03em;
     text-align: center;
     color: #212121;
     margin-top: 94px;
+    margin-bottom: 30px;
 }
 .client__list{
    @extend %flex;
+   flex-wrap: wrap;
 }
 .client__icon{
     fill: #757575;
     height: 92px;
-    width: 170px;
+    width: 210px;
     border: 1px solid #afb1b8;
     border-radius: 4px;
     padding: 16px 32px;    
-    margin-top: 50px;
-    margin-bottom: 94px;
+    margin-bottom: 30px;
 }
 @keyframes changeBorder{
     0%{
@@ -33,7 +34,7 @@
 .client__icon:focus{
     fill: #2196F3;
     height: 92px;
-    width: 170px;
+    width: 210px;
     border: 1px solid #2196F3;
     border-radius: 4px;
     padding: 16px 32px;    
@@ -41,4 +42,20 @@
     margin-bottom: 94px;
     animation-name: changeBorder;
     animation-duration: 250ms;
+}
+@media screen and (min-width:768px){
+    .client__icon{
+        width: 226px;
+        margin-top: 50px;
+    }
+}
+@media screen and (min-width:1200px){
+    .client__icon{
+        width: 170px;
+    }
+    .client__icon:hover,
+    .client__icon:focus{
+        width: 170px;
+        margin-bottom: 0;
+    }
 }
