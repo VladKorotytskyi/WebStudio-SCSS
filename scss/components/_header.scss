@@ -14,15 +14,17 @@
     align-items: center;
 }
 .header__navigation{
-    display: none;
-
+    display: flex;
+    align-items: center;
+    padding-top: 24px;
+    padding-bottom: 25px;
 }
 .header__logo{
     @extend %logospan;
     color: $accent-color;
 }
 .header__list{
-    display: flex;
+    display: none;
 }
 .header__item{
     margin-right: 50px;
@@ -104,13 +106,10 @@
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 @media screen and (min-width:768px){
-    .header__navigation{
+    .header__list{
         display: flex;
-        align-items: center;
-        padding-top: 24px;
-        padding-bottom: 25px;
     }
     .header__contacts{
-        display: block;
+        display: flex;
     }
 }
