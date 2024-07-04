@@ -20,8 +20,7 @@
     <link rel="stylesheet" href="./css/main.min.css">
   </head>
   <body>
-    <!-- header -->
-    <!-- <header class="header">
+    <header class="header">
       <div class="container header__wrap">
       <nav class="header__navigation">
         <a class="header__logo" href="index.html">Web<a href="index.html" class="logo__span">Studio</a></a>
@@ -56,8 +55,25 @@
         </li>
       </ul>
       </div>
-      
-    </header> -->
+      <!-- mobile menu -->
+       <button class="menu-button js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+        <svg class="menu-button__open">
+          <use></use>
+        </svg>
+       </button>
+
+       <div class="menu-container js-menu-container" id="mobile-menu">
+        <button class="menu-button js-close-menu">
+          <svg class="menu-button__close">
+            <use></use>
+          </svg>
+        </button>
+
+        <div class="menu-box">
+          <!-- Стилі -->
+        </div>
+       </div>
+    </header>
     <!-- main -->
     <main>
       <!-- section 1 -->
@@ -372,7 +388,7 @@
         </div>
         <div class="footer__div-footer">
           <h2 class="footer__title-second">Підпишіться на розсилку</h2>
-        <form>
+        <form class="footer__form">
           <label class="footer__label">
             <input class="footer__input" type="email" placeholder="E-mail" required>
           </label>
@@ -387,5 +403,9 @@
         
       </div>
     </footer>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+    integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+    crossorigin="anonymous"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
