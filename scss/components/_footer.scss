@@ -12,6 +12,7 @@
 .footer__logo{
     @extend %logospan;
     color: $accent-color;
+    
 }
 .footer__span{
     @extend %logospan;
@@ -19,6 +20,7 @@
 }
 .footer__addres-name{
     color: white;
+    
 }
 .footer__addres-link{
     color: $text-color;
@@ -30,11 +32,12 @@
 .footer__two-list{
     display: flex;
     gap: 10px;
+    justify-content: center;
 }
 .footer__item-two{
     background-color: #43464f;
     border-radius: 50%;
-    margin-bottom: 90px;
+    margin-bottom: 60px;
     padding: 12px;
     transition-property: background-color;
     transition-duration: 250ms;
@@ -54,6 +57,8 @@
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #fff;
+    text-align: center;
+    margin-top: 60px;
     padding-bottom: 20px;
 }
 // .footer__second-div{
@@ -71,6 +76,7 @@
     font-size: 14px;
     letter-spacing: 0.03em;
     margin-bottom: 20px;
+    text-align: center;
   }
   .footer__input{
     border: 1px solid rgba(255, 255, 255, 0.3);
@@ -84,6 +90,7 @@
     line-height: 125%;
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
+    margin-bottom: 20px;
   }
   .footer__svg{
     fill: #fff;
@@ -109,10 +116,60 @@
     background: #2196f3;
     border: none;
     margin-left: 12px;
-    margin: 0 auto;
+    margin: 0 auto; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-// .footer__div-footer{
-//     margin-left: 93px;
-// }
+.footer__text-div{
+    text-align: center;
+    margin-bottom: 20px;
+}
+.footer__list{
+    text-align: center;
+}
+@media screen and (min-width:768px){
+    .footer__div-footer{
+        width: 450px;
+        margin: 0 auto;
+    }
+    .footer__tablet-div{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .footer{
+        padding-top: 0;
+    }
+}
+@media screen and (min-width:1200px){
+    .footer__second-div{
+        display: flex;
+        align-items: center;
+    }
+    .footer__form{
+        display: flex;
+    }
+    .footer__div-footer{
+        width: 570px;
+    }
+    .footer__input{
+        width: 358px;
+    }
+    .footer__footer-div{
+        margin-right: 70px;
+    }
+    .footer__two-div{
+        margin-right: 122px;
+    }
+    .footer__text-div{
+       text-align: start; 
+    }
+    .footer__list{
+        text-align: start;
+    }
+}
+
+
 
 

@@ -3,12 +3,14 @@
     justify-content: space-between;
 }
 %benefistTitle{
-    margin-bottom: 30px;
     content: '';
+    margin-bottom: 30px;
     display: block;
     border-radius: 4px;
     height: 120px;
     background-repeat: no-repeat;
+    width: 100%;
+    
 }
 .benefist{
     padding-top: 60px;
@@ -23,6 +25,11 @@
 }
 .benefist__item{
     width: 290px;
+}
+@media screen and (min-width:480px){
+    .benefist__item{
+        width: 450px;
+    } 
 }
 .benefist__title-first{
     font-weight: 700;
@@ -62,18 +69,22 @@
 }
 .benefist__title-first::before{
     @extend %benefistTitle;
+    
     background-image:url(../img/Group1.png);
 }
 .benefist__title-second::before{
     @extend %benefistTitle;
+    
     background-image:url(../img/Group2.png);
 }
 .benefist__title-third::before{
     @extend %benefistTitle;
+    
     background-image:url(../img/Group3.png);
 }
 .benefist__title-fourth::before{
     @extend %benefistTitle;
+    
     background-image:url(../img/Group4.png);
 }
 @media screen and (min-width: 768px) {  

@@ -391,12 +391,13 @@ img {
 }
 
 .benefist__title-fourth::before, .benefist__title-third::before, .benefist__title-second::before, .benefist__title-first::before {
-  margin-bottom: 30px;
   content: "";
+  margin-bottom: 30px;
   display: block;
   border-radius: 4px;
   height: 120px;
   background-repeat: no-repeat;
+  width: 100%;
 }
 
 .benefist {
@@ -416,6 +417,11 @@ img {
   width: 290px;
 }
 
+@media screen and (min-width: 480px) {
+  .benefist__item {
+    width: 450px;
+  }
+}
 .benefist__title-first {
   font-weight: 700;
   font-size: 14px;
@@ -568,10 +574,6 @@ img {
 
 .team__text {
   padding-bottom: 16px;
-}
-
-.team__item {
-  width: 290px;
 }
 
 .team__title {
@@ -762,12 +764,13 @@ img {
 .footer__two-list {
   display: flex;
   gap: 10px;
+  justify-content: center;
 }
 
 .footer__item-two {
   background-color: #43464f;
   border-radius: 50%;
-  margin-bottom: 90px;
+  margin-bottom: 60px;
   padding: 12px;
   transition-property: background-color;
   transition-duration: 250ms;
@@ -789,6 +792,8 @@ img {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #fff;
+  text-align: center;
+  margin-top: 60px;
   padding-bottom: 20px;
 }
 
@@ -799,6 +804,7 @@ img {
   font-size: 14px;
   letter-spacing: 0.03em;
   margin-bottom: 20px;
+  text-align: center;
 }
 
 .footer__input {
@@ -813,6 +819,7 @@ img {
   line-height: 125%;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
+  margin-bottom: 20px;
 }
 
 .footer__svg {
@@ -842,8 +849,61 @@ img {
   border: none;
   margin-left: 12px;
   margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
+.footer__text-div {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.footer__list {
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .footer__div-footer {
+    width: 450px;
+    margin: 0 auto;
+  }
+  .footer__tablet-div {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .footer {
+    padding-top: 0;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer__second-div {
+    display: flex;
+    align-items: center;
+  }
+  .footer__form {
+    display: flex;
+  }
+  .footer__div-footer {
+    width: 570px;
+  }
+  .footer__input {
+    width: 358px;
+  }
+  .footer__footer-div {
+    margin-right: 70px;
+  }
+  .footer__two-div {
+    margin-right: 122px;
+  }
+  .footer__text-div {
+    text-align: start;
+  }
+  .footer__list {
+    text-align: start;
+  }
+}
 .portfolio {
   padding-bottom: 60px;
   padding-top: 60px;
