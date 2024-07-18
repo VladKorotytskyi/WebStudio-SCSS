@@ -23,7 +23,7 @@
     <header class="header">
       <div class="container header__wrap">
       <nav class="header__navigation">
-        <a class="header__logo" href="index.html">Web<a href="index.html" class="logo__span">Studio</a></a>
+        <a class="header__logo" href="index.html">Web<a href="index.html" class="header__logo-span">Studio</a></a>
         <ul class="header__list">
           <li class="header__item">
             <a class="header__link current" href="index.html">Студія</a>
@@ -58,19 +58,41 @@
       <!-- mobile menu -->
        <button class="menu-button js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
         <svg class="menu-button__open">
-          <use></use>
+          <use href="./img/symbol-defs.svg#icon-menu-mobile"></use>
         </svg>
        </button>
 
        <div class="menu-container js-menu-container" id="mobile-menu">
         <button class="menu-button js-close-menu">
           <svg class="menu-button__close">
-            <use></use>
+            <use href="./img/symbol-defs.svg#icon-close-mobile"></use>
           </svg>
         </button>
 
         <div class="menu-box">
-          <!-- Стилі -->
+          <ul class="mobile__menu-list">
+            <li class="mobile__menu-item"><a href="./index.html" class="mobile__link">Студія</a></li>
+            <li class="mobile__menu-item"><a href="./portfolio.html" class="mobile__link">Портфоліо</a></li>
+            <li class="mobile__menu-item"><a href="#" class="mobile__link">Контакти</a></li>
+          </ul>
+          <ul class="mobile__link-list">
+            <li class="mobile__link-item"><a href="#" class="mobile__phone">+38 096 111 11 11</a></li>
+            <li class="mobile__link-item"><a href="#" class="mobile__gmail">info@devstudio.com</a></li>
+          </ul>
+          <ul class="mobile__applications">
+            <li class="mobile__applicaction">
+              <a href="https://www.instagram.com/" class="applicaction__link">Instagram</a>
+            </li>
+            <li class="mobile__applicaction">
+              <a href="https://x.com/?lang=ru" class="applicaction__link">Twitter</a>
+            </li>
+            <li class="mobile__applicaction">
+              <a href="https://pl-pl.facebook.com/" class="applicaction__link">Facebook</a>
+            </li>
+            <li class="mobile__applicaction">
+              <a href="https://www.linkedin.com/" class="applicaction__link">LinkedIn</a>
+            </li>
+          </ul>
         </div>
        </div>
     </header>

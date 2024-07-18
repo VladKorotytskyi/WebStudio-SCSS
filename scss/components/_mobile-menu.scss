@@ -8,46 +8,113 @@
   background-color: $item-color;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08),
     0px 1px 3px rgba(0, 0, 0, 0.16);
-    z-index: 999;
-    transform: translateX(100%);
-    transition-duration: 250ms;
-    transition-timing-function: ease;
+  z-index: 999;
+  transform: translateX(100%);
+  transition-duration: 250ms;
+  transition-timing-function: ease;
 }
-.menu-container.is-open{
-    transform: translateX(0%);
+.menu-container.is-open {
+  transform: translateX(0%);
 }
-.menu-button{
-    position: absolute;
+.menu-button {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  top: -38px;
+  right: 2px;
+  margin: 0;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  width: 40px;
+  height: 40px;
+}
+.menu-button__open {
+  padding: 0;
+  background-color: transparent;
+  margin-left: auto;
+  border: none;
+  cursor: pointer;
+}
+.menu-button__close {
+  position: absolute;
+  top: 55px;
+  right: 2px;
+  padding: 0;
+  margin-left: auto;
+  border: none;
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+}
+
+.header__contacts-icon:hover,
+.header__contacts-icon:focus {
+  fill: $accent-color;
+}
+@media screen and (min-width: 768px) {
+  .menu-button {
+    display: none;
+  }
+}
+
+// Стилі мобільного меню
+.mobile__menu-item {
+  font-weight: 500;
+  font-size: 40px;
+  letter-spacing: 0.02em;
+}
+.mobile__link {
+  color: $title-color;
+}
+.mobile__link:hover,
+.mobile__link:focus {
+  color: $accent-color;
+}
+.mobile__menu-item {
+  margin-bottom: 10px;
+}
+.mobile__phone {
+  font-weight: 500;
+  font-size: 25px;
+  letter-spacing: 0.02em;
+  color: $accent-color;
+}
+.mobile__gmail {
+  font-weight: 500;
+  font-size: 20px;
+  letter-spacing: 0.02em;
+  color: $text-color;
+}
+.mobile__applicaction {
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 122%;
+  letter-spacing: 0.02em;
+}
+.applicaction__link{
+    color: $accent-color;
+}
+.mobile__applications{
     display: flex;
-    align-items: center;
-    justify-content: center;
-    top: 10px;
-    right: 2px;
-    margin: 0;
-    background-color: red;
-    border: none;
-    outline: none;
-    width: 40px;
-    height: 40px;
+    justify-content:space-between;
 }
-.menu-button__open{
-    padding: 0;
-    background-color: transparent;
-    margin-left: auto;
-    border: none;
-    cursor: pointer;
+.mobile__link-item:nth-child(1){
+    margin-top: 292px;
+    margin-bottom: 15px;
 }
-.menu-button__close{
-    position: absolute;
-    top: 10px;
-    right: 15px;
-    padding: 0;
-    margin-left: auto;
-    border: none;
-    cursor: pointer;
+.mobile__link-item:nth-child(2){
+    margin-bottom: 40px;
 }
-@media screen and (min-width: 768px){
-    .menu-button{
-        display: none;
+@media screen and (min-width:480px){
+    .mobile__phone{
+        font-size: 34px;
+    }
+    .mobile__applicaction{
+        font-size: 18px;
+    }
+    .mobile__gmail{
+        font-size: 24px;
     }
 }
+
