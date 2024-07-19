@@ -319,13 +319,18 @@ img {
   }
 }
 .header__post {
-  background-image: url("../img/overlay.png"), url("../img/fon.jpg");
+  background-image: url("../../img/overlay.png"), url("../../img/fon.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   text-align: center;
 }
 
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .header__post {
+    background-image: url(../../img/overlay@2x.png), url(../../img/fon@2x.png);
+  }
+}
 .header__post-title {
   font-size: 26px;
   font-weight: 900;
