@@ -319,7 +319,7 @@ img {
   }
 }
 .header__post {
-  background-image: url("../../img/overlay.png"), url("../../img/fon.png");
+  background-image: url("./../img/overlay.png"), url("./../img/fon.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
