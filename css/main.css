@@ -556,39 +556,39 @@ img {
 }
 
 .benefist__title-first::before {
-  background-image: url(../../img/ventilator.png), url(../../img/ventilator.webp);
+  background-image: url(./../img/ventilator.png), url(./../img/ventilator.webp);
 }
 
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .benefist__title-first::before {
-    background-image: url(../../img/ventilator@2x.png), url(../../img/ventilator@2x.webp);
+    background-image: url(./../img/ventilator@2x.png), url(./../img/ventilator@2x.webp);
   }
 }
 .benefist__title-second::before {
-  background-image: url(../../img/chasy.png), url(../../img/chasy.webp);
+  background-image: url(./../img/chasy.png), url(./../img/chasy.webp);
 }
 
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .benefist__title-second::before {
-    background-image: url(../../img/chasy@2x.png), url(../../img/chasy@2x.webp);
+    background-image: url(./../img/chasy@2x.png), url(./../img/chasy@2x.webp);
   }
 }
 .benefist__title-third::before {
-  background-image: url(../../img/nout.png), url(../../img/nout.webp);
+  background-image: url(./../img/nout.png), url(./../img/nout.webp);
 }
 
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .benefist__title-third::before {
-    background-image: url(../../img/nout@2x.png), url(../../img/nout@2x.webp);
+    background-image: url(./../img/nout@2x.png), url(./../img/nout@2x.webp);
   }
 }
 .benefist__title-fourth::before {
-  background-image: url(../../img/chelovek.png), url(../../img/chelovek.webp);
+  background-image: url(./../img/chelovek.png), url(./../img/chelovek.webp);
 }
 
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .benefist__title-fourth::before {
-    background-image: url(../../img/chelovek@2x.png), url(../../img/chelovek@2x.webp);
+    background-image: url(./../img/chelovek@2x.png), url(./../img/chelovek@2x.webp);
   }
 }
 @media screen and (min-width: 768px) {
