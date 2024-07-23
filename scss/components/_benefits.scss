@@ -1,130 +1,154 @@
-%flex{
-    display: flex;
-    justify-content: space-between;
+%flex {
+  display: flex;
+  justify-content: space-between;
 }
-%benefistTitle{
-    content: '';
-    margin-bottom: 30px;
-    display: block;
-    border-radius: 4px;
-    height: 120px;
-    background-repeat: no-repeat;
-    width: 100%;
-    
+%benefistTitle {
+  content: "";
+  margin-bottom: 30px;
+  display: block;
+  border-radius: 4px;
+  height: 120px;
+  background-repeat: no-repeat;
+  width: 100%;
 }
-.benefist{
-    padding-top: 60px;
-    padding-bottom: 60px;
+.benefist {
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
-.benefist__text{
-    color: $text-color;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 171%;
-    letter-spacing: 0.03em;
+.benefist__text {
+  color: $text-color;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 171%;
+  letter-spacing: 0.03em;
 }
-.benefist__item{
-    width: 290px;
+.benefist__item {
+  width: 290px;
 }
-@media screen and (min-width:480px){
-    .benefist__item{
-        width: 450px;
-    } 
+@media screen and (min-width: 480px) {
+  .benefist__item {
+    width: 450px;
+  }
 }
-.benefist__title-first{
-    font-weight: 700;
-    font-size: 14px;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    text-align: center;
-    color: #212121;
-    margin-bottom: 10px;
+.benefist__title-first {
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  text-align: center;
+  color: #212121;
+  margin-bottom: 10px;
 }
-.benefist__title-second{
-    font-weight: 700;
-    font-size: 14px;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    text-align: center;
-    color: #212121;
-    margin-bottom: 10px;
+.benefist__title-second {
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  text-align: center;
+  color: #212121;
+  margin-bottom: 10px;
 }
-.benefist__title-third{
-    font-weight: 700;
-    font-size: 14px;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    text-align: center;
-    color: #212121;
-    margin-bottom: 10px;
+.benefist__title-third {
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  text-align: center;
+  color: #212121;
+  margin-bottom: 10px;
 }
-.benefist__title-fourth{
-    font-weight: 700;
-    font-size: 14px;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    text-align: center;
-    color: #212121;
-    margin-bottom: 10px;
+.benefist__title-fourth {
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  text-align: center;
+  color: #212121;
+  margin-bottom: 10px;
 }
-.benefist__title-first::before{
-    @extend %benefistTitle;
-    
-    background-image:url(../img/Group1.png);
+.benefist__title-first::before {
+  @extend %benefistTitle;
+  background-image: url(../../img/ventilator.png), url(../../img/ventilator.webp);
 }
-.benefist__title-second::before{
-    @extend %benefistTitle;
-    
-    background-image:url(../img/Group2.png);
-}
-.benefist__title-third::before{
-    @extend %benefistTitle;
-    
-    background-image:url(../img/Group3.png);
-}
-.benefist__title-fourth::before{
-    @extend %benefistTitle;
-    
-    background-image:url(../img/Group4.png);
-}
-@media screen and (min-width: 768px) {  
-    .benefist__title-first{
-        text-align: left;
-        width: 100%;
-    }
-    .benefist__title-second{
-        text-align: left;
-        width: 100%;
-    }
-    .benefist__title-third{
-        text-align: left;
-        width: 100%;    
-    }
-    .benefist__title-fourth{
-        text-align: left;
-        width: 100%;      
-    }
-    .benefist__list{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-    }
-    .benefist__item{
-        width: 354px;
-    }
+@media (min-device-pixel-ratio: 2),
+(-webkit-min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx){
     .benefist__title-first::before{
-        width: 100%;
+        background-image: url(../../img/ventilator@2x.png), url(../../img/ventilator@2x.webp);
     }
 }
-@media screen and (min-width: 1200px) {  
-    .benefist{
-        padding-top: 94px;
-        padding-bottom: 94px;
-    }
-    .benefist__item{
-        width: 270px;
-    }
+.benefist__title-second::before {
+  @extend %benefistTitle;
+  background-image: url(../../img/chasy.png), url(../../img/chasy.webp);
 }
-
-
-
+@media (min-device-pixel-ratio: 2),
+(-webkit-min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx){
+    .benefist__title-second::before{
+        background-image: url(../../img/chasy@2x.png), url(../../img/chasy@2x.webp);
+    }   
+}
+.benefist__title-third::before {
+  @extend %benefistTitle;
+  background-image: url(../../img/nout.png), url(../../img/nout.webp);
+}
+@media (min-device-pixel-ratio: 2),
+(-webkit-min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx){
+    .benefist__title-third::before{
+        background-image: url(../../img/nout@2x.png), url(../../img/nout@2x.webp);
+    }    
+}
+.benefist__title-fourth::before {
+  @extend %benefistTitle;
+  background-image: url(../../img/chelovek.png), url(../../img/chelovek.webp);
+}
+@media (min-device-pixel-ratio: 2),
+(-webkit-min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx){
+    .benefist__title-fourth::before{
+        background-image: url(../../img/chelovek@2x.png), url(../../img/chelovek@2x.webp);
+    }    
+}
+@media screen and (min-width: 768px) {
+  .benefist__title-first {
+    text-align: left;
+    width: 100%;
+  }
+  .benefist__title-second {
+    text-align: left;
+    width: 100%;
+  }
+  .benefist__title-third {
+    text-align: left;
+    width: 100%;
+  }
+  .benefist__title-fourth {
+    text-align: left;
+    width: 100%;
+  }
+  .benefist__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .benefist__item {
+    width: 354px;
+  }
+  .benefist__title-first::before {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .benefist {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+  .benefist__item {
+    width: 270px;
+  }
+}

@@ -319,7 +319,7 @@ img {
   }
 }
 .header__post {
-  background-image: url("./../img/overlay.png"), url("./../img/fon.png");
+  background-image: url("./../img/overlay.png"), url("./../img/fon.webp");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -328,7 +328,7 @@ img {
 
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .header__post {
-    background-image: url(./../img/overlay@2x.png), url(./../img/fon@2x.png);
+    background-image: url(./../img/overlay@2x.png), url(./../img/fon@2x.webp);
   }
 }
 .header__post-title {
@@ -556,21 +556,41 @@ img {
 }
 
 .benefist__title-first::before {
-  background-image: url(../img/Group1.png);
+  background-image: url(../../img/ventilator.png), url(../../img/ventilator.webp);
 }
 
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .benefist__title-first::before {
+    background-image: url(../../img/ventilator@2x.png), url(../../img/ventilator@2x.webp);
+  }
+}
 .benefist__title-second::before {
-  background-image: url(../img/Group2.png);
+  background-image: url(../../img/chasy.png), url(../../img/chasy.webp);
 }
 
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .benefist__title-second::before {
+    background-image: url(../../img/chasy@2x.png), url(../../img/chasy@2x.webp);
+  }
+}
 .benefist__title-third::before {
-  background-image: url(../img/Group3.png);
+  background-image: url(../../img/nout.png), url(../../img/nout.webp);
 }
 
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .benefist__title-third::before {
+    background-image: url(../../img/nout@2x.png), url(../../img/nout@2x.webp);
+  }
+}
 .benefist__title-fourth::before {
-  background-image: url(../img/Group4.png);
+  background-image: url(../../img/chelovek.png), url(../../img/chelovek.webp);
 }
 
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .benefist__title-fourth::before {
+    background-image: url(../../img/chelovek@2x.png), url(../../img/chelovek@2x.webp);
+  }
+}
 @media screen and (min-width: 768px) {
   .benefist__title-first {
     text-align: left;
@@ -847,7 +867,6 @@ img {
 
 .footer__addres-link {
   color: #757575;
-  padding-bottom: 60px;
 }
 
 .footer__item {
